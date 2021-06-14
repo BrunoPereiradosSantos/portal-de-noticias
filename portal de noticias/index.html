@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <title>Portal de notícias</title>
+</head>
+<body>
+    <div class="topo">
+        <div class="topoint">
+            <div class="topoleft">
+                <ul>
+                    <li><a href="./" class="ativo"> Home </a></li>
+                    <li><a href="./"> Quem Somos </a> </li>
+                    <li><a href="./"> Anuncie Aqui </a> </li>
+                    <li><a href="./"> Contato </a></li>  
+                </ul>
+            </div>
+            <div class="toporight">
+                <input type="image" src="assets/images/lupa.png" border="0" width="26" height="26">    
+                <input type="text" name="busca" placeholder=" busca..." class="topobusca">
+                <a href=""><img src="assets/images/youtube.png" border="0" width="26" height="26"></a>
+                <a href=""><img src="assets/images/twitter.png" border="0" width="26" height="26"></a>
+                <a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+                <a href=""><img src="assets/images/google-plus.png" border="0" width="26" height="26"></a>
+                <a href=""><img src="assets/images/rss.png" border="0" width="26" height="26"></a>
+            </div>
+        </div>
+    </div>
+    <div class="topo2">
+        <div class="topo2int">
+            <div class="logo">
+                <img src="assets/images/PORTAL DAS NOTÍCIAS AGORA.png" border="0" width="230">
+            </div>
+            <a href="https://canaldoanuncio.com">
+                <div class="banner">
+                    Anuncie Aqui!
+                </div>
+            </a>    
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menuint">
+            <img src="assets/images/menu.png" border="0" width="40" height="40" class="menumobile" onclick="toggleMenu()">
+            <ul id="menu">
+                <li><a href="./" class="ativo"> Home </a></li>
+                <li><a href="./"> Economia </a> </li>
+                <li>
+                    <a href="./"> Entretenimento </a> 
+                    <img src="assets/images/down-chevron.png" border="0" width="10px">
+                    <div class="submenu">
+                        <a href="./"><div class="submenuitem">Sub menu 1</div></a>
+                        <a href="./"><div class="submenuitem">Sub menu 2</div></a>
+                        <a href="./"><div class="submenuitem">Sub menu 3</div></a>
+                        <a href="./"><div class="submenuitem">Sub menu 4</div></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./"> Esportes </a>
+                    <img src="assets/images/down-chevron.png" border="0" width="10px">
+                    <div class="submenu">
+                        <a href="./"><div class="submenuitem">Sub menu 1</div></a>
+                        <a href="./"><div class="submenuitem">Sub menu 2</div></a>
+                        <a href="./"><div class="submenuitem">Sub menu 3</div></a>
+                    </div>
+                </li>  
+                <li><a href="./"> Geral </a> </li>
+                <li>
+                    <a href="./"> Noticias </a>
+                    <img src="assets/images/down-chevron.png" border="0" width="10px">
+                    <div class="submenu">
+                        <a href="./"><div class="submenuitem">Sub menu 1</div></a>
+                        <a href="./"><div class="submenuitem">Sub menu 2</div></a>
+                        <a href="./"><div class="submenuitem">Sub menu 3</div></a>
+                        <a href="./"><div class="submenuitem">Sub menu 4</div></a> 
+                        <a href="./"><div class="submenuitem">Sub menu 5</div></a>   
+                    </div>
+                 </li>
+                <li><a href="./"> Polícia </a></li> 
+                <li><a href="./"> Videos </a></li> 
+            </ul>
+        </div>
+    </div>
+    <div class="ultimasnoticias">
+        <div class="ultimasnoticiasint">
+            <div class="ultnoticiasarea">
+                <div class="ultnoticiastitulo">ÚLTIMAS NOTÍCIAS</div>
+                <div class="ultnoticiasnoticia">
+                    <a href="https://g1.globo.com/economia/noticia/2021/06/14/dolar.ghtml">
+                        Dólar opera em queda em semana de decisão sobre juros no Brasil e nos EUA</div>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="containerint">
+            <div class="leftside">
+                <div class="slideshow" id="slideshow">
+                    <div class="slidebolinhas">
+                        <div class="bolinha" onclick="mudarSlide(0)"></div>
+                        <div class="bolinha" onclick="mudarSlide(1)"></div>
+                        <div class="bolinha" onclick="mudarSlide(2)"></div>
+                        <div class="bolinha" onclick="mudarSlide(3)"></div>
+                    </div>
+                    <div class="slideshowarea">
+                        <a href="https://super.abril.com.br/saude/por-que-o-brasil-e-o-pais-do-futebol/">
+                            <div class="slide" style="background-image:url('https://super.abril.com.br/wp-content/uploads/2018/08/futebol-brasil.png?quality=70&strip=info&resize=680,453');">
+                                <div class="slideinfo">
+                                    <div class="slideinfo_titulo">Por que o Brasil é o país do futebol?</div>
+                                    <div class="slideinfo_subtitulo">Conheça a história do esporte no país campeão em títulos da Copa do Mundo</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://g1.globo.com/es/espirito-santo/noticia/2021/06/12/es-chega-a-11132-mortes-e-497847-casos-confirmados-de-covid-19.ghtml">
+                            <div class="slide" style="background-image:url('https://s2.glbimg.com/eqDflFP9Q4RC_RfcmddSB-wBn8I=/0x0:1000x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/t/I/BEtmLPSr6RwqpMwhVj2A/corona-mayo.jpg');">
+                                <div class="slideinfo">
+                                    <div class="slideinfo_titulo">ES chega a 11.132 mortes e 497.847 casos confirmados de Covid-19</div>
+                                    <div class="slideinfo_subtitulo">Na comparação com os dados divulgados nesta sexta-feira (11)...</div>
+                                </div>  
+                            </div>
+                        </a>
+                        <a href="https://www.jornalnh.com.br/noticias/regiao/2021/06/12/falta-de-chips-atinge-a-economia-e-a-nossa-vida.html">  
+                            <div class="slide" style="background-image:url('https://midia.gruposinos.com.br/_midias/jpg/2021/06/11/800x500/1_ht_micron2-19676495.jpg?ims=800x/filters:quality(70)');">
+                                <div class="slideinfo">
+                                    <div class="slideinfo_titulo">Como a falta de chips atinge a economia e a nossa vida</div>
+                                    <div class="slideinfo_subtitulo">Demanda de eletroeletrônicos aquecida e retomada das montadoras exigem cada vez mais de componentes menores que um grão de arroz. </div>
+                                </div>
+                            </div>
+                        </a> 
+                        <a href="https://exame.com/ciencia/em-1953-cientista-previu-que-um-lider-chamado-elon-comandaria-marte/">
+                            <div class="slide" style="background-image:url('https://exame.com/wp-content/uploads/2021/03/GettyImages-1229901929.jpg?quality=70&strip=info&resize=680,453');">
+                                <div class="slideinfo">
+                                    <div class="slideinfo_titulo">Em 1953, cientista previu que um líder chamado 'Elon' comandaria Marte</div>
+                                    <div class="slideinfo_subtitulo">Em outubro deste ano, Elon Musk, CEO e fundador da SpaceX, afirmou que em 2024 humanos poderiam colocar os pés no planeta vermelho</div>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_titulo">NOTÌCIAS</div>
+                    <div class="widget_conteudo">
+                        <div class="noticiaarea1">
+                            <a href="https://noticiasdatv.uol.com.br/noticia/celebridades/cantor-marrone-critica-bebedeira-de-bruno-apos-passar-vergonha-em-live-59271">
+                                <div class="noticiaitem noticiabig">
+                                    <div class="noticiaimg">
+                                        <img src="https://noticiasdatv.uol.com.br/media/_versions/artigos/bruno-e-marrone-reproducao-instagram_fixed_large.jpg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">
+                                        Cantor Marrone critica bebedeira de Bruno após passar vergonha em live...
+                                    </div>
+                                    <div class="noticiainfo">O cantor Marrone, da dupla com Bruno, voltou a criticar o parceiro após vexames por bebedeira...</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="noticiaarea2">
+                            <a href="https://noticias.uol.com.br/cotidiano/ultimas-noticias/2021/06/12/chefe-da-maior-milicia-do-rio-ecko-morre-apos-ser-preso-em-acao-policial.htm"> 
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="https://conteudo.imguol.com.br/c/noticias/e8/2021/06/12/ecko-chefe-da-maior-milicia-do-rio-durante-prisao-1623502624131_v2_450x600.png.webp" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Ecko, chefe da maior milícia do Rio de Janeiro</div>
+                                    <div class="noticiainfo">Apontado como chefe da maior milícia do estado do Rio de Janeiro...</div>
+                                </div>
+                            </a>
+                            <a href="https://gente.ig.com.br/celebridades/2021-06-12/alexandre-garcia-informacoes-falsas-pandemia-70-mil.html">     
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="https://i0.statig.com.br/bancodeimagens/0p/n4/bo/0pn4bo2yt5n4j4yaaj2sqnymp.jpg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Alexandre Garcia ganhou R$ 70 mil disseminando notícias falsas sobre a pandemia</div>
+                                    <div class="noticiainfo">O Google divulgou o quanto o jornalista faturou...</div>
+                                </div>
+                            </a>
+                            <a href="https://gente.ig.com.br/colunas/fabia-oliveira/2021-06-12/lexa-cache-milionario.html"> 
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="https://i0.statig.com.br/bancodeimagens/40/a6/mz/40a6mzh2hdlzawf2peaobgn0v.jpg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Lexa ganha cachê milionário por anúncio de uma montadora de carros</div>
+                                    <div class="noticiainfo">Nem mesmo a pandemia de Covid-19 impediu a cantora Lexa de encher o...</div>
+                                </div>
+                            </a>
+                            <a href="https://www.gazetadopovo.com.br/republica/breves/morre-marco-maciel-ex-vice-presidente/">     
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="https://media.gazetadopovo.com.br/2021/06/12094218/imagem_materia-858x540.jpg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Morre o ex-vice-presidente Marco Maciel
+                                        </div>
+                                    <div class="noticiainfo">Morreu neste sábado, aos 80 anos, o ex-vice-presidente da República Marco Maciel...
+                                        </div>
+                                </div>
+                            </a>    
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_titulo">ESPORTES</div>
+                    <div class="widget_conteudo">
+                        <div class="noticiaarea1">
+                            <div class="noticiaitem noticiabig">
+                                <div class="noticiaimg">
+                                    <img src="https://fw.atarde.uol.com.br/2021/06/750_venezuela-copa-america-covid_20216121718526.jpg" border="0" width="80" height="80">
+                                </div>
+                                <div class="noticiatitulo">Ás vésperas da Copa América no Brasil, seleção da Venezuela confirma 12 casos de Covid-19
+                                </div>
+                                <div class="noticiainfo">Pelo menos 12 membros da delegação de futebol da Venezuela se encontram isolados em um hotel de Brasília</div>
+                            </div>
+                        </div>
+                        <div class="noticiaarea2">
+                            <a href="https://www.uol.com.br/esporte/futebol/colunas/rodrigo-mattos/2021/06/11/bolsonaro-avisa-a-conmebol-que-nao-vai-a-abertura-da-copa-america.htm">
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="https://conteudo.imguol.com.br/c/parceiros/bd/2021/06/06/o-presidente-jair-bolsonaro-posa-com-a-taca-da-copa-america-e-a-selecao-brasileira-no-maracana-em-2019-carolina-antunespr-1623020759310_v2_450x450.jpg.webp" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Bolsonaro avisa que não vai à abertura da Copa América</div>
+                                    <div class="noticiainfo">O presidente da República, avisou à Conmebol que não vai comparecer à abertura da Copa América...</div>
+                                </div>
+                            </a>
+                            <a href="https://esportes.r7.com/futebol/apos-melhora-de-eriksen-jogo-entre-dinamarca-e-finlandia-e-retomado-12062021">   
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="https://img.r7.com/images/christian-eriksen-12062021142001765?dimensions=771x420&no_crop=true" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Jogo entre Dinamarca e Finlândia é retomado</div>
+                                    <div class="noticiainfo">A recuperação rápida de Eriksen após o susto do desmaio em campo no Estádio Parken...</div>
+                                </div>
+                            </a> 
+                            <a href="https://www.opovo.com.br/esportes/futebol/2021/06/12/palmeiras-x-corinthians-ao-vivo--onde-assistir-e-escalacao-provavel.html"> 
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="https://www.opovo.com.br/_midias/jpg/2021/06/11/750x500/1_palmeiras_corithians_jogo_futebol_partida_disputa_duelo_campo_gramado_estadio_brasileirao_campeonato_brasileiro_2021_serie_a_jpg-16071449.jpg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Palmeiras x Corinthians ao vivo: onde assistir e escalação provável</div>
+                                    <div class="noticiainfo">Jogo do Campeonato Brasileiro 2021 será disputado hoje entre Corinthians...</div>
+                                </div>
+                            </a>
+                            <a href="https://www.terra.com.br/esportes/sao-paulo/pablo-relembra-tempo-no-real-madrid-e-conselhos-de-cr7,a26490a306007c860910c822f3b56544h466zxi1.html">     
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2021/06/12/1468319333-60c4f152e0524.jpeg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Pablo relembra tempo no Real Madrid e conselhos de CR7</div>
+                                    <div class="noticiainfo">Atacante do São Paulo falou sobre passagem pela equipe espanhola e conselhos...</div>
+                                </div>
+                            </a>    
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="widget">
+                    <div class="widget_titulo">SOCIAL</div>
+                    <div class="widget_conteudo">
+                        <a href=""><img src="assets/images/rss.png" border="0" width="26" height="26"></a>
+                        <a href=""><img src="assets/images/google-plus.png" border="0" width="26" height="26"></a>
+                        <a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+                        <a href=""><img src="assets/images/twitter.png" border="0" width="26" height="26"></a>
+                        <a href=""><img src="assets/images/youtube.png" border="0" width="26" height="26"></a>    
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_titulo">ÚLTIMAS NOTÍCIAS</div>
+                    <div class="widget_conteudo">
+                        <div class="noticia_item">
+                            <a href="https://www.canalrural.com.br/noticias/depois-de-chegar-a-r-580-por-que-o-dolar-esta-despencando/">
+                                Depois de chegar a R$ 5,80, por que o dólar está despencando?
+                            </a> 
+                        </div>
+                        <div class="noticia_item">
+                            <a href="https://www.canalrural.com.br/noticias/consumo-mundial-cafe-167-mi-sacas-2020-21/">
+                                Consumo mundial de café chega a 167 mi de sacas em 2020/21
+                            </a> 
+                         </div>
+                         <div class="noticia_item">
+                            <a href="https://www.canalrural.com.br/programas/informacao/rural-noticias/na-justica-areas-desmatadas-antes-do-codigo-florestal-devem-ser-reflorestadas/">
+                                Na Justiça: áreas desmatadas antes do Código Florestal devem ser reflorestadas?
+                            </a> 
+                         </div>
+                         <div class="noticia_item">
+                            <a href="https://www.canalrural.com.br/noticias/defensivo-soja-mortes-abelha/">
+                                RS: defensivo usado na soja pode responder por 77% das mortes de abelhas
+                            </a> 
+                         </div>
+                         <div class="noticia_item">
+                            <a href="https://www.canalrural.com.br/noticias/hortifruti/fertilizantes-custos-de-producao-hortalicas/">
+                                Alta dos fertilizantes eleva custos da produção de hortaliças
+                            </a> 
+                         </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_titulo">PUBLICIDADE</div>
+                    <div class="widget_conteudo">
+                        <a href="https://www.youtube.com/watch?v=Ph0uH8uojjw&ab_channel=Unipar-UniversidadeParanaense">
+                            <img src="assets/images/banner.png" border="0" width="275">
+                        </a>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_titulo">ENCONTRE-NOS NO FACEBOOK</div>
+                    <div class="widget_conteudo">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fquetalcultura%2F&tabs&width=275&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="275" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
